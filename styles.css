@@ -1,0 +1,64 @@
+body {
+    background-color: #222;
+    color: orange;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: none;
+    color: orange;
+    border: 2px solid orange;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: orange;
+    color: #222;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid orange;
+    cursor: pointer;
+}
+
+.player {
+    margin-top: 20px;
+}
+
+button {
+    background: orange;
+    color: #222;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff9800;
+}
