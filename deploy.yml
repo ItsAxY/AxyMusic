@@ -1,0 +1,23 @@
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment on push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest  # The runner environment for the job
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set API Key
+        run: echo "GOOGLE_DRIVE_API_KEY=${{ secrets.GOOGLE_DRIVE_API_KEY }}" >> $GITHUB_ENV
+
+      # Add any additional steps for deploying your website here
+      - name: Deploy Website (Example)
+        run: |
+          # Example deployment commands, like copying files to your server
+          echo "Deploying website..."
